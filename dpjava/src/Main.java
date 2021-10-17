@@ -1,6 +1,5 @@
 
 import bruteforce.*;
-import java.util.ArrayList;
 import java.util.List;
 import memoization.*;
 import tabulation.*;
@@ -25,10 +24,10 @@ public class Main {
     System.out.println("bestSum: " + BestSumBruteForce.bestSum(7, List.of(5, 3, 4, 7)));
 
     String target = "abcdef";
-    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd", "ef");
     System.out.println("canConstruct: " + CanConstructBruteForce.canConstruct(target, wordBank));
-    System.out.println("howConstruct: ");
-    System.out.println("bestConstruct: ");
+    System.out.println("countConstruct: " + CountConstructBruteForce.countConstruct(target, wordBank));
+    System.out.println("allConstruct: " + AllConstructBruteForce.allConstruct(target, wordBank));
   }
 
   /*
@@ -53,10 +52,10 @@ public class Main {
     System.out.println("bestSum: " + BestSumTopDown.bestSum(7, List.of(5, 3, 4, 7)));
 
     String target = "abcdef";
-    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd", "ef");
     System.out.println("canConstruct: " + CanConstructTopDown.canConstruct(target, wordBank));
-    System.out.println("howConstruct: ");
-    System.out.println("bestConstruct: ");
+    System.out.println("countConstruct: " + CountConstructTopDown.countConstruct(target, wordBank));
+    System.out.println("allConstruct: " + AllConstructTopDown.allConstruct(target, wordBank));
   }
 
   /*
@@ -78,9 +77,9 @@ public class Main {
     System.out.println("bestSum: " + BestSumBottomUp.bestSum(7, List.of(5, 3, 4, 7)));
 
     String target = "abcdef";
-    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd", "ef");
     System.out.println("canConstruct: " + CanConstructBottomUp.canConstruct(target, wordBank));
-    System.out.println("howConstruct: ");
-    System.out.println("bestConstruct: ");
+    System.out.println("countConstruct: " + CountConstructBottomUp.countConstruct(target, wordBank));
+    System.out.println("allConstruct: " + AllConstructBottomUp.allConstruct(target, wordBank));
   }
 }
