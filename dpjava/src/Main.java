@@ -1,5 +1,6 @@
 
 import bruteforce.*;
+import java.util.ArrayList;
 import java.util.List;
 import memoization.*;
 import tabulation.*;
@@ -18,10 +19,14 @@ public class Main {
     System.out.println("====Brute Force Recursive====");
     System.out.println("Fibonacci: " + FibonacciBruteForce.fib(10));
     System.out.println("GridTraveler: " + GridTravelerBruteForce.gridTraveler(10, 10));
+
     System.out.println("canSum: " + CanSumBruteForce.canSum(7, List.of(5, 3, 4, 7)));
     System.out.println("howSum: " + HowSumBruteForce.howSum(7, List.of(5, 3, 4, 7)));
     System.out.println("bestSum: " + BestSumBruteForce.bestSum(7, List.of(5, 3, 4, 7)));
-    System.out.println("canConstruct: ");
+
+    String target = "abcdef";
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    System.out.println("canConstruct: " + CanConstructBruteForce.canConstruct(target, wordBank));
     System.out.println("howConstruct: ");
     System.out.println("bestConstruct: ");
   }
@@ -42,10 +47,14 @@ public class Main {
     System.out.println("====Top-Down====");
     System.out.println("Fibonacci: " + FibonacciTopDown.fib(1000));
     System.out.println("GridTraveler: " + GridTravelerTopDown.gridTraveler(1000, 1000));
+
     System.out.println("canSum: " + CanSumTopDown.canSum(7, List.of(5, 3, 4, 7)));
     System.out.println("howSum: " + HowSumTopDown.howSum(7, List.of(5, 3, 4, 7)));
     System.out.println("bestSum: " + BestSumTopDown.bestSum(7, List.of(5, 3, 4, 7)));
-    System.out.println("canConstruct: ");
+
+    String target = "abcdef";
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    System.out.println("canConstruct: " + CanConstructTopDown.canConstruct(target, wordBank));
     System.out.println("howConstruct: ");
     System.out.println("bestConstruct: ");
   }
@@ -63,10 +72,14 @@ public class Main {
     System.out.println("====Bottom-Up====");
     System.out.println("Fibonacci: " + FibonacciBottomUp.fib(1000));
     System.out.println("GridTraveler: " + GridTravelerBottomUp.gridTraveler(1000, 1000));
+
     System.out.println("canSum: " + CanSumBottomUp.canSum(7, List.of(5, 3, 4, 7)));
     System.out.println("howSum: " + HowSumBottomUp.howSum(7, List.of(5, 3, 4, 7)));
     System.out.println("bestSum: " + BestSumBottomUp.bestSum(7, List.of(5, 3, 4, 7)));
-    System.out.println("canConstruct: ");
+
+    String target = "abcdef";
+    List<String> wordBank = List.of("ab", "abc", "cd", "def", "abcd");
+    System.out.println("canConstruct: " + CanConstructBottomUp.canConstruct(target, wordBank));
     System.out.println("howConstruct: ");
     System.out.println("bestConstruct: ");
   }
