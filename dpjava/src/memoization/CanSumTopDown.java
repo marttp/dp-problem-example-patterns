@@ -23,7 +23,7 @@ public class CanSumTopDown {
     }
     for (int n : list) {
       int remainder = target - n;
-      if (canSum(remainder, list)) {
+      if (canSum(remainder, list, memo)) {
         memo.put(target, Boolean.TRUE);
         return memo.get(target);
       }
