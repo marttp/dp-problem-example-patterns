@@ -7,15 +7,20 @@ import tabulation.*;
 public class Main {
 
   public static void main(String[] args) {
+
+    Main.bruteForce();
+    Main.memoization();
+    Main.tabulation();
+  }
+
+  public static void bruteForce() {
     // Brute Force will take too much time to execute
     // Beware most of input
 
 //    System.out.println(FibonacciBruteForce.fib(20));
 //    System.out.println(GridTravelerBruteForce.gridTraveler(20, 20));
 //    System.out.println(CanSumBruteForce.canSum(7, List.of(5, 3, 4, 7)));
-
-    Main.memoization();
-    Main.tabulation();
+    System.out.println(HowSumBruteForce.howSum(7, List.of(5, 3, 4, 7)));
   }
 
   /*
@@ -32,10 +37,10 @@ public class Main {
    * */
   public static void memoization() {
     System.out.println("====Top-Down====");
-    System.out.println("Fibonacci: " + FibonacciTopDown.fib(1000) );
+    System.out.println("Fibonacci: " + FibonacciTopDown.fib(1000));
     System.out.println("GridTraveler: " + GridTravelerTopDown.gridTraveler(1000, 1000));
     System.out.println("canSum: " + CanSumTopDown.canSum(7, List.of(5, 3, 4, 7)));
-    System.out.println("howSum");
+    System.out.println("howSum: " + HowSumTopDown.howSum(7, List.of(5, 3, 4, 7)));
     System.out.println("bestSum");
     System.out.println("canConstruct");
     System.out.println("howConstruct");
@@ -56,7 +61,7 @@ public class Main {
     System.out.println("Fibonacci: " + FibonacciBottomUp.fib(1000));
     System.out.println("GridTraveler: " + GridTravelerBottomUp.gridTraveler(1000, 1000));
     System.out.println("canSum: " + CanSumBottomUp.canSum(7, List.of(5, 3, 4, 7)));
-    System.out.println("howSum");
+    System.out.println("howSum: " + HowSumBottomUp.howSum(7, List.of(5, 3, 4, 7)));
     System.out.println("bestSum");
     System.out.println("canConstruct");
     System.out.println("howConstruct");

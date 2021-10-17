@@ -11,7 +11,7 @@ public class CanSumTopDown {
     return canSum(target, list, memo);
   }
 
-  public static boolean canSum(int target, List<Integer> list, Map<Integer, Boolean> memo) {
+  private static boolean canSum(int target, List<Integer> list, Map<Integer, Boolean> memo) {
     if (memo.containsKey(target)) {
       return memo.get(target);
     }

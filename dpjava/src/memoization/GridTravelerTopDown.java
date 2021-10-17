@@ -10,7 +10,7 @@ public class GridTravelerTopDown {
     return gridTraveler(m, n, memo);
   }
 
-  public static int gridTraveler(int m, int n, Map<String, Integer> memo) {
+  private static int gridTraveler(int m, int n, Map<String, Integer> memo) {
     String key = m + ":" + n;
     if (memo.containsKey(key)) {
       return memo.get(key);

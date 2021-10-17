@@ -10,7 +10,7 @@ public class FibonacciTopDown {
     return fib(n, memo);
   }
 
-  public static int fib(int n, Map<Integer, Integer> memo) {
+  private static int fib(int n, Map<Integer, Integer> memo) {
     if (memo.containsKey(n)) {
       return memo.get(n);
     }
