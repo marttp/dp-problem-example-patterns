@@ -9,6 +9,7 @@ public class Main {
     // Beware most of input
 
 //    System.out.println(FibonacciBruteForce.fib(20));
+//    System.out.println(GridTravelerBruteForce.gridTraveler(20, 20));
 
      Main.memoization();
      Main.tabulation();
@@ -31,6 +32,7 @@ public class Main {
     System.out.println("Fibonacci");
     System.out.println(FibonacciTopDown.fib(1000));
     System.out.println("GridTraveler");
+    System.out.println(GridTravelerTopDown.gridTraveler(1000, 1000));
     System.out.println("canSum");
     System.out.println("howSum");
     System.out.println("bestSum");
@@ -53,6 +55,7 @@ public class Main {
     System.out.println("Fibonacci");
     System.out.println(FibonacciBottomUp.fib(1000));
     System.out.println("GridTraveler");
+    System.out.println(GridTravelerBottomUp.gridTraveler(1000, 1000));
     System.out.println("canSum");
     System.out.println("howSum");
     System.out.println("bestSum");
